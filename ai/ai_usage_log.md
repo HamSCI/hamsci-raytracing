@@ -44,4 +44,4 @@ command produces this format and appends it in the right order.
   template's `docs/GETTING_STARTED.md`), `.gitignore` (new), `README.md`, `CITATION.cff`
 - **Nature of Contribution**: Scaffolding and adaptation of two existing templates
 - **Human Review Status**: Pending review by N. A. Frissell (W2NAF)
-- **Git Hash**: [pending commit]
+- **Git Hash**: 8059027
