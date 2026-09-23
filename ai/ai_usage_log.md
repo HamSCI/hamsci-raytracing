@@ -1,6 +1,9 @@
-# AI Usage Log: {{PROJECT_NAME}}
+# AI Usage Log: HamSCI Ray Tracing
 
-This log records every substantive AI-assisted session on the project "{{PROJECT_TITLE}}".
+This log records every substantive AI-assisted session on the project "Ionospheric Model
+Validation and Development of an Open-Source HF Ray-Tracing Toolkit Leveraging HamSCI Citizen
+Science Data" (NASA award 80NSSC26K0051), carried out under the HamSCI Ray Tracing working
+group.
 
 Required by the HamSCI Generative AI Use Agreement, and by any institutional or funder policy
 that applies to this project (see `.claude/rules/ai-governance.md`).
@@ -26,22 +29,37 @@ command produces this format and appends it in the right order.
 
 ---
 
-<!-- Append new entries below this line, newest at the bottom.
-     On instantiating a new working group repository from this template, delete every entry
-     below: they belong to the template's own development, not to your project. -->
+<!-- Append new entries below this line, newest at the bottom. -->
+<!-- The template-merge entry that previously stood here (git hash 8059027) belonged to the
+     hamsci-wg / ai_project_template merge, not to this project, and was cleared per the
+     README's instantiation checklist. -->
 
-## [2026-09-22 21:03 UTC]
-- **Tool**: Claude (Anthropic), claude-opus-5[1m]
-- **Session Purpose**: Make the HamSCI working group website template compatible with
-  `HamSCI/ai_project_template`, by merging that template's governance scaffolding (CLAUDE.md,
-  `.claude/` rules and commands, the AI usage log, and the getting-started guide) into the
-  working group scaffold without disturbing the Jekyll site under `docs/`.
-- **Sections/Files Affected**: `CLAUDE.md` (new), `.claude/settings.json` (new),
-  `.claude/commands/commit.md` (new), `.claude/rules/ai-governance.md`,
-  `.claude/rules/hamsci-data.md`, `.claude/rules/latex-writing.md`,
-  `.claude/rules/python-code.md` (all new, copied unchanged from the AI project template),
-  `ai/ai_usage_log.md` (new), `ai/GETTING_STARTED.md` (new, adapted from the AI project
-  template's `docs/GETTING_STARTED.md`), `.gitignore` (new), `README.md`, `CITATION.cff`
-- **Nature of Contribution**: Scaffolding and adaptation of two existing templates
-- **Human Review Status**: Pending review by N. A. Frissell (W2NAF)
-- **Git Hash**: 8059027
+## [2026-09-23 02:12 EDT]
+- **Tool**: Claude (Anthropic), claude-sonnet-5
+- **Session Purpose**: Instantiate the HamSCI Ray Tracing working group repo from the merged
+  hamsci-wg/ai_project_template scaffold with real team/funder/working-group details; replace
+  leftover content from a different (WWV/H) working group on the public docs/ site; add a
+  LICENSE; then, per PI direction, update the public docs and CLAUDE.md to reflect (1) the
+  technical pivot from extending PyLap/PHaRLAP to a native-Python 3D ray-tracing engine based on
+  the Jones & Stephenson (1975) formulation, and (2) the project's actual schedule — an official
+  period of performance of February 2026 – January 2029 (5-month shift from the proposal's
+  nominal Sept 2025 – Aug 2028), with active work practically starting mid-May 2026 due to the
+  PI's leave while the January 2029 end date has not moved. Built and ran the Jekyll site locally
+  to review before committing, which surfaced and fixed several real bugs: an empty-comment
+  `datasets.bib` that crashed the BibTeX parser; two internal links (`/about/`, `/results/`) that
+  ignored the site's baseurl; a "new issue" link inherited from the template that pointed at the
+  wrong domain; two dead external links (PSWS/GRAPE, Madrigal Database) replaced with working
+  ones found via web search and verified with curl; and a bibliography entry (Hozumi 2024b) whose
+  raw `.pptx` file URL was replaced with no url field, consistent with the other entries' stable
+  landing-page links. Also removed a dead-end empty "Table of Contents" block on the Mission page.
+- **Sections/Files Affected**: CLAUDE.md, README.md, CITATION.cff, LICENSE.txt (new),
+  .claude/rules/ai-governance.md, ai/ai_usage_log.md, docs/_config.yml, docs/index.md,
+  docs/1_about.md, docs/2_mission.md, docs/3_goals.md, docs/4_minutes.md, docs/5_resources.md,
+  docs/_bibliography/publications.bib, docs/_bibliography/datasets.bib, docs/Gemfile.lock,
+  src/README.md; deleted .claude/rules/latex-writing.md, ai/GETTING_STARTED.md,
+  docs/publications.bib (stray duplicate)
+- **Nature of Contribution**: Scaffolding, edit, drafting of public-facing website copy, research
+  (link verification via WebSearch/curl), local build verification
+- **Human Review Status**: Reviewed and verified by the PI (Kornyanat Hozumi) during the session,
+  including a live local preview of every page
+- **Git Hash**: [fill in after committing]

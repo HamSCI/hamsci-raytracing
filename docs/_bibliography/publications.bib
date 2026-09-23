@@ -1,31 +1,76 @@
-@ARTICLE{10.3389/fspas.2026.1713968,
-    
-AUTHOR={Fernandes, Sabastian  and Perry, Gareth W.  and Trigo, Tiago  and Frissell, Nathaniel A.  and Gibbons, John  and Collins, Kristina },
-           
-TITLE={Characterizing ionospheric variability through HF Doppler measurements: a statistical and numerical ray tracing analysis},
-          
-JOURNAL={Frontiers in Astronomy and Space Sciences},
-          
-VOLUME={Volume 13 - 2026},
-  
-YEAR={2026},
-  
-URL={https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2026.1713968},
-  
-DOI={10.3389/fspas.2026.1713968},
-  
-ISSN={2296-987X},
-  
-ABSTRACT={High-frequency (HF) skywave propagation relies on the ionosphere, making it susceptible to ionospheric variability. This study analyzes long-term Doppler residual measurements of a 10 MHz HF link between Fort Collins, CO, and Newark, NJ, to characterize the impact of ionospheric conditions on the link. We report that daytime measurements of Doppler variability exhibit Cauchy statistics, while nighttime measurements show a combination of exponential and log-normal statistics. These patterns correlate with solar activity and solar zenith angle. We also use PHaRLAP numerical ray tracing simulations through the IRI 2020 ionosphere to provide insights into signal ray paths and the altitudes of the ionosphere contributing to the observed Doppler shifts. By examining diurnal variations and statistical properties of Doppler residuals, this study aims to enhance our understanding of ionospheric dynamics and their influence on HF signal characteristics.}}
+% Publications by this working group's team related to the 3D HF ray-tracing toolkit and
+% HamSCI-based ionospheric model validation. Sourced from the reference list of the funded
+% NASA proposal (award 80NSSC26K0051); verify against the original sources before citing.
+%
+% Note on the Diehl et al. (2023) author list: the proposal PDF's text extraction garbled two
+% author names into "Vega, L. W., J.". The order below (Diehl, Piccini, Calderon, Liles, Vega,
+% Frissell) is reconstructed from the matching author group on the companion Calderon et al.
+% (2025) PyLAP software citation below. Verify before treating as authoritative.
 
-@proceedings{bibcite_532,
-  author = {Jay Weitzen and Jocelyn Frechette and Elliot Lebsack},
-  title = {Study of HF Channel Conditions Using WWV/WWVH test Modulation Signals},
-  abstract = {This paper summarizes a year-long data-collection and analysis effort using test signals transmitted by WWV and WWVH every hour. Multipath and Doppler fading profiles for two links from Massachusetts to Boulder, Colorado (WWV), and Hawaii (WWVH) were calculated. Correlations between multipath and Doppler profiles and Kp index were calculated. This paper also proposes a set of techniques for processing and using the WWV/H test signals.},
-  year = {2026},
-  journal = {HamSCI Workshop 2026},
-  month = {03/2026},
-  publisher = {HamSCI},
-  address = {Newington, CT},
-  language = {eng},
+@misc{diehl2023pylap,
+  author       = {Diehl, D. and Piccini, G. and Calderon, A. and Liles, W. and Vega, J. and
+                  Frissell, N.},
+  title        = {PyLap: An Open Source {P}ython Interface to the {PHaRLAP} Ionospheric
+                  Raytracing Toolkit},
+  howpublished = {HamSCI Workshop 2023},
+  address      = {Scranton, PA},
+  year         = {2023},
+  url          = {https://hamsci.org/publications/pylap-open-source-python-interface-pharlap-ionospheric-raytracing-toolkit},
+}
+
+@software{calderon2025pylap,
+  author = {Calderon, A. and Diehl, D. and Piccini, G. and Liles, W. and Vega, J. and
+            Frissell, N.},
+  title  = {PyLAP},
+  year   = {2025},
+  url    = {https://github.com/hamsci/pylap},
+}
+
+@article{frissell2023heliophysics,
+  author  = {Frissell, Nathaniel A. and others},
+  title   = {Heliophysics and Amateur Radio: Citizen Science Collaborations for Atmospheric,
+             Ionospheric, and Space Physics Research and Operations},
+  journal = {Frontiers in Astronomy and Space Sciences},
+  year    = {2023},
+  doi     = {10.3389/fspas.2023.1184171},
+}
+
+@misc{griffiths2023sidescatter,
+  author       = {Griffiths, G. and Diehl, D. and Robinett, R. and Rhymes, R.},
+  title        = {{HF} Two-Hop Sidescatter: Identification, Modeling and Observations of an
+                  Underappreciated Propagation Mode},
+  howpublished = {AGU Fall Meeting 2023},
+  address      = {San Francisco, CA},
+  year         = {2023},
+  url          = {https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1301410},
+}
+
+% No stable landing-page URL exists for the Hozumi (2024b) talk below (only a direct .pptx
+% download from the CCMC2024 workshop's presentations folder), so unlike the other entries here,
+% no url field is given; the venue/location/year identify it instead.
+@misc{hozumi2024b,
+  author       = {Hozumi, K.},
+  title        = {Ionosphere Validation with {HamSCI} Data},
+  howpublished = {CCMC2024 Workshop},
+  address      = {College Park, MD},
+  year         = {2024},
+}
+
+@misc{hozumi2024c,
+  author       = {Hozumi, K. and Frissell, N. and Chou, M.-Y. and Griffiths, G.},
+  title        = {{HamSCI} as a Novel Dataset to Validate Ionospheric Models},
+  howpublished = {AGU Fall Meeting 2024},
+  address      = {Washington, D.C.},
+  year         = {2024},
+  url          = {https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1635272},
+}
+
+@misc{hozumi2024a,
+  author       = {Hozumi, K. and Frissell, N. and Chou, M.-Y. and Griffiths, G. and Engelke, W.
+                  and Yue and Kuznetsova, M. and others},
+  title        = {Trial of Applying {PHaRLAP} Raytracing to Reproduce Ham Spot Data},
+  howpublished = {HamSCI Workshop 2024},
+  address      = {Cleveland, OH},
+  year         = {2024},
+  url          = {https://hamsci.com/publications/trial-applying-pharlap-raytracing-reproduce-ham-spot-data},
 }

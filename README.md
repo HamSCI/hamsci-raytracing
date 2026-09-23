@@ -1,43 +1,37 @@
-# hamsci-wg
-A template repository for HamSCI working groups: a website, a place for the group's hardware and
-software, and the HamSCI AI governance scaffolding, in one repository.
+# HamSCI Ray Tracing
 
-## [Check out the example site here.](https://hamsci.github.io/hamsci-wg)
+HamSCI Ray Tracing is a HamSCI working group for amateur radio operators, citizen scientists,
+software developers, and professional researchers interested in HF propagation and ionospheric
+science. The group develops and promotes open-source HF ray-tracing tools, validates ionospheric
+models using HamSCI observations, and studies space weather and unusual HF propagation
+(including Equatorial Plasma Bubbles and off-great-circle/side-scatter paths). It also runs
+tutorials, technical discussions, software feedback sessions, and community research projects.
 
-This template combines two HamSCI scaffolds, and stays compatible with both:
+This work is supported by **NASA ROSES 2024 B.21 Heliophysics Citizen Science Investigations
+(H-CSI)**, award **80NSSC26K0051**, *"Ionospheric Model Validation and Development of an
+Open-Source HF Ray-Tracing Toolkit Leveraging HamSCI Citizen Science Data"* (PI: Kornyanat
+Hozumi, University of Scranton).
+
+**Join us**: [Google Group](https://groups.google.com/g/hamsci-ray-tracing?pli=1) ·
+bi-weekly meetings, announced on the mailing list ·
+[HamSCI working group page](https://hamsci.org/working-group/raytracing-wg)
+
+## [Check out our website here.](https://hamsci.github.io/hamsci-raytracing)
+
+This repository combines two HamSCI scaffolds:
 
 | Scaffold | Provides |
 |---|---|
-| This repository | `docs/` (the Jekyll website), `Gemfile`, `.github/workflows/pages.yml`, `hardware/`, `src/` |
+| [`HamSCI/hamsci-wg`](https://github.com/HamSCI/hamsci-wg) | `docs/` (the Jekyll website), `Gemfile`, `.github/workflows/pages.yml`, `hardware/`, `src/` |
 | [`HamSCI/ai_project_template`](https://github.com/HamSCI/ai_project_template) | `CLAUDE.md`, `.claude/`, `ai/`, the `.gitignore`, and the issue templates |
 
 The AI files sit outside `docs/` because everything under `docs/` is published to the web.
-Otherwise they are the upstream files, so a working group repository can be kept in step with
-`ai_project_template` as that template evolves.
 
-# How to Use This Repository
+## Software
 
-## The website
-- [X] Create a new repository using this template.
-- [ ] Update docs/_config.yml with information about your working group. You'll need to change where it says "hamsci-wg" to whatever you want the working group's link to be.
-- [ ] Populate the docs pages. You can edit their titles or add/delete pages as needed; they will appear on the site in filename order.
-- [ ] Edit CITATION.cff file, if you want to be able to cite this repo. If not, delete that file.
-- [ ] [Select a license](https://choosealicense.com/non-software/) and add a LICENSE.txt file. Record the same license in `CITATION.cff`.
-- [ ] Under Settings>Pages, set this to deploy via Github Actions. (It will run the pages.yml actions already in the repository.)
-- [ ] Verify that the documentation pages are published on hamsci.github.io.
-- [ ] Optionally, replace the favicons in \docs\assets with favicons related to your working group. These can be generated at https://favicon.io/.
-- [ ] To create an archive of the group's work by archiving this repository, [synchronize to a Zenodo repository](https://help.zenodo.org/docs/github/enable-repository/), publish a release, and add DOI badge here.
-
-## The AI scaffolding
-- [ ] Read [`ai/GETTING_STARTED.md`](ai/GETTING_STARTED.md) if you are new to Claude Code or to AI-use policy.
-- [ ] Fill in the placeholders in `CLAUDE.md`, `ai/ai_usage_log.md`, and `CITATION.cff`. Find them with `grep -rn '{{' --exclude-dir=.git --exclude-dir=docs --exclude-dir=_site --exclude-dir=workflows .` (the `docs/` and `workflows` exclusions matter, because Jekyll and GitHub Actions use the same braces).
-- [ ] Clear the existing entries in `ai/ai_usage_log.md`; they belong to the template's own development.
-- [ ] Trim the policy tiers in `.claude/rules/ai-governance.md`: delete Tier 2 if no institution governs the work, Tier 3 if the project is unfunded. Tier 1 stays.
-- [ ] Prune the optional rule files: `rm .claude/rules/latex-writing.md` if there is no LaTeX, `rm .claude/rules/python-code.md` if there is no Python. Remove the matching lines from `CLAUDE.md`.
-- [ ] Delete `ai/GETTING_STARTED.md` once the project is running.
-
-## Finally
-- [ ] Change the paragraph above to add a description of your working group, and delete these checklists from the README.
+The 3D ray-tracing toolkit itself is under active development in the PI's private repository.
+Vetted, publishable components will be ported into `src/` as they mature; see
+[`src/README.md`](src/README.md). `src/` does not yet contain the toolkit code.
 
 # AI Use in This Working Group
 

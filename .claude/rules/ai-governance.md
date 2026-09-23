@@ -60,14 +60,14 @@ disclosure must stay accurate as scope changes; understating scope is the failur
 
 ## Tier 2: If you work under an institution
 
-*Delete this section if no university, laboratory, or employer policy governs this work.*
-
-### {{INSTITUTION}} AI Policy ({{POLICY_DATE}})
+### University of Scranton AI Policy (September 2025)
 - Maintain transparency about AI use in all project outputs
 - Human oversight and review of all AI-generated content is required
 - Do not use AI to misrepresent authorship or intellectual contribution
 - Ethical use aligned with the institution's academic integrity standards
-- {{Add institution-specific requirements here. Link the policy document.}}
+- Collaborators at other institutions (NJIT, Case Western Reserve University, Virginia Tech, MIT
+  Haystack Observatory, Montclair State University) are bound by their own institution's policy
+  for their own contributions; see the note at the end of this tier.
 
 HamSCI participants work under many different institutional policies. Common ones in this
 collaboration include the University of Scranton AI Policy (September 2025), and the
@@ -80,25 +80,22 @@ advisor before using AI assistance on work that will be graded or that forms par
 
 ## Tier 3: If the work is funded
 
-*Delete this section if the project is unfunded or volunteer-run.*
-
 ### NASA Guidance on Generative AI in Funded Research
 - Disclose AI-assisted content in deliverables to NASA-funded projects
 - Maintain human authorship and accountability for scientific claims
 - Do not submit ITAR/EAR-controlled, confidential, or unpublished mission data to AI tools
 - Verify factual claims against authoritative sources before publication
 
-### NSF Guidance on Responsible Use of Generative AI in Funded Research
-- Disclose AI use in NSF deliverables, proposals, and publications as required
-- Maintain human authorship and intellectual responsibility for results
-- Do not use AI to generate or substantially shape proposal review content unless explicitly
-  authorized
-- Do not submit confidential or unpublished data to AI tools
-
-### {{FUNDER}}-Specific Expectations
-{{Replace with funder-specific AI-use expectations and deliverable requirements. Add other
-bodies as needed (DARPA, DOE, ARRL Foundation, ARDC, Amateur Radio Digital Communications,
-NOAA, AFRL). List every funder's grant number in the acknowledgments of published outputs.}}
+### NASA ROSES 2024 B.21 H-CSI, Award 80NSSC26K0051 — Specific Expectations
+- Acknowledge NASA award **80NSSC26K0051** in publications, presentations, and the toolkit's
+  documentation/README, per NASA's award terms.
+- Follow the proposal's Open Science and Data Management Plan: HamSCI observational data (RBN,
+  PSKReporter, WSPRNet, Madrigal, PSWS/GRAPE) stays on its originating networks; ionospheric
+  model outputs and ray-tracing results are archived to the HamSCI Zenodo Community; code is
+  posted to the HamSCI GitHub Repository; HamSCI data/spectrogram metadata is registered in the
+  SPASE repository.
+- Peer-reviewed publications use open-access options where the award covers the fee; toolkit
+  documentation ships at minimum as a README alongside the code.
 
 AI-assisted content that materially affects a collaborator-led section should be flagged to that
 collaborator, and is subject to **their** institutional and funder policies as well as yours.
@@ -134,7 +131,8 @@ issue comments, and pull request descriptions are attributed solely to the authe
 account. AI-drafted content on those surfaces is invisible unless it is marked by hand. Mark it:
 
 ```html
-<sub>Drafted by Claude (Anthropic), `claude-opus-5`, under {{YOUR_NAME}}'s direction; analysis
+<sub>Drafted by Claude (Anthropic), `claude-opus-5`, under {{YOUR_NAME}}'s direction (substitute the
+actual session author's name); analysis
 verified against the sources named above. Scientific decisions are the authors'.<br>
 Co-Authored-By: Claude Opus 5 &lt;noreply@anthropic.com&gt;</sub>
 ```

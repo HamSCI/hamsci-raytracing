@@ -18,10 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: HamSCI Working Group
+title: HamSCI Ray Tracing
 description: >- # this means to ignore newlines until "baseurl:"
-  A HamSCI Working Group.
-baseurl: "/hamsci-wg/" # the subpath of your site, e.g. /blog
+  A HamSCI working group developing an open-source 3D HF ray-tracing toolkit, validating
+  ionospheric models against HamSCI data, and studying space-weather-driven anomalous HF
+  propagation.
+baseurl: "/hamsci-raytracing/" # the subpath of your site, e.g. /blog
 domain: hamsci.github.io
 url: "https://hamsci.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 

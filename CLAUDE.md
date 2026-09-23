@@ -1,10 +1,18 @@
-# {{PROJECT_NAME}}
+# HamSCI Ray Tracing
 
 ## Project Overview
-{{ONE-PARAGRAPH DESCRIPTION OF THE WORKING GROUP: what it is investigating or building, its
-purpose, and its audience.}}
+HamSCI Ray Tracing is a HamSCI working group for amateur radio operators, citizen scientists,
+software developers, and professional researchers interested in HF propagation and ionospheric
+science. It develops and promotes open-source HF ray-tracing tools — a 3D HF ray-tracing engine
+implemented natively in Python from the Jones & Stephenson ray-tracing formulation, rather than
+wrapping the team's earlier PyLap/PHaRLAP toolchain — validates ionospheric models (e.g., IRI,
+SAMI3, coupled SAMI3/WACCM-X) against
+HamSCI observational data (RBN, PSKReporter, WSPRNet, and PSWS/GRAPE Doppler receivers), and
+studies space weather effects on anomalous HF propagation, including Equatorial Plasma Bubbles
+(EPBs) and understudied off-great-circle (side-scatter) paths. The audience is HamSCI volunteers,
+licensed amateur radio operators, students, and ionospheric/HF propagation researchers.
 
-This repository holds a HamSCI working group's public website and the group's shared work. It
+This repository holds the working group's public website and the group's shared work. It
 combines two HamSCI scaffolds:
 
 - the working group website template
@@ -14,17 +22,48 @@ combines two HamSCI scaffolds:
   ([`HamSCI/ai_project_template`](https://github.com/HamSCI/ai_project_template)), which supplies
   this file, `.claude/`, and `ai/`.
 
-**Lead**: {{LEAD_NAME_CALLSIGN_AND_AFFILIATION}}
-**Collaborators**: {{COLLABORATORS: names, callsigns, and roles}}
-**HamSCI Working Group**: {{WORKING_GROUP}}
-**Institution**: {{INSTITUTION, or "none: this is a volunteer project"}}
-**Funder**: {{FUNDER_AND_GRANT_NUMBER, or "unfunded"}}
-**Project period**: {{PROJECT_PERIOD}}
-**Website**: https://hamsci.github.io/{{REPO_NAME}}
-**Mailing list / meetings**: {{HOW TO JOIN, or "none"}}
+**Lead**: Dr. Kornyanat Hozumi (PI), University of Scranton
+**Collaborators**:
+- Dr. Nathaniel Frissell, W2NAF (Co-I and Scientific PI; HamSCI founder), University of Scranton
+- Dr. Mark Fenner (Co-I; software engineering, numerical methods), University of Scranton
+- Gary Mikitin, AF8A (Amateur Radio Coordinator)
+- Gwyn Griffiths, G3ZIL (off-great-circle/side-scatter propagation)
+- Bob Gerzoff, WK2Y (model validation techniques)
+- Dr. Mary Lou West, KC2NMC (tutorials), Professor Emerita, Montclair State University
+- Dr. Joseph Huba (Ionospheric Model Consultant; SAMI3 and SAMI3/WACCM-X model output)
+- A Scranton Graduate Research Assistant (software engineering, model validation) — not yet named
+
+**HamSCI Working Group**: HamSCI Ray Tracing (https://hamsci.org/working-group/raytracing-wg)
+**Institution**: University of Scranton
+**Funder**: NASA ROSES 2024 B.21 Heliophysics Citizen Science Investigations (H-CSI),
+award/grant no. 80NSSC26K0051 ("Ionospheric Model Validation and Development of an Open-Source
+HF Ray-Tracing Toolkit Leveraging HamSCI Citizen Science Data")
+**Project period**: February 2026 – January 2029 (official period of performance; the proposal's
+nominal period was September 2025 – August 2028, a 5-month shift). Active work practically began
+mid-May 2026 (PI's leave); the official end date, January 2029, has **not** been extended to
+compensate — see the Work Plan note on `docs/3_goals.md`.
+**Website**: https://hamsci.github.io/hamsci-raytracing
+**Mailing list / meetings**: [Google Group](https://groups.google.com/g/hamsci-ray-tracing?pli=1);
+bi-weekly meetings, announced on the mailing list
 
 ## Project Goal
-{{PROJECT_GOAL, 1 to 3 sentences.}}
+Develop and validate an open-source, 3D HF ray-tracing toolkit — implemented natively in Python
+from the Jones & Stephenson ray-tracing formulation — using HamSCI citizen-science data to
+validate ionospheric models and to study space-weather-driven anomalous HF propagation (EPBs,
+off-great-circle paths), while training and engaging citizen scientists through documentation and
+bi-weekly seminars.
+
+## Software: `src/`
+The 3D ray-tracing toolkit is under active development in the PI's private repository. `src/`
+here is currently a **placeholder**: vetted, publishable components will be ported in as they
+mature (see `src/README.md`). Do not assume ray-tracing code exists in this repo yet.
+
+**Technical approach note**: the funded proposal's text (and this repo's early scaffolding)
+describes extending the team's 2D PyLap/PHaRLAP toolchain to 3D. As of September 2026 the PI has
+instead moved to a from-scratch 3D ray-tracing engine implemented natively in Python, based on
+the Jones & Stephenson ray-tracing formulation, independent of PyLap/PHaRLAP's proprietary core.
+PyLap remains relevant as the team's prior related work. Do not assume PyLap-extension framing
+elsewhere (older notes, the proposal PDF) reflects the current implementation plan.
 
 ## Standing Rules
 
@@ -34,22 +73,22 @@ automatically:
 @.claude/rules/ai-governance.md
 @.claude/rules/hamsci-data.md
 
-Two further rule files are optional, and are scoped by their own `paths:` frontmatter to the
-file types they govern:
+One further rule file is optional, scoped by its own `paths:` frontmatter to the file types it
+governs:
 
-- `.claude/rules/latex-writing.md` applies to `.tex`, `.bib`, `.cls`, and `.sty` files
 - `.claude/rules/python-code.md` applies to `.py`, `pyproject.toml`, and `requirements*.txt`
 
-Delete whichever the project does not use. To have one of them load unconditionally instead, add
-an `@` import line for it above.
+(`.claude/rules/latex-writing.md` was removed: there is no LaTeX in this repo. Re-add it, e.g.
+from `HamSCI/ai_project_template`, if a manuscript or Overleaf submodule is added later.) To have
+a rule file load unconditionally instead, add an `@` import line for it above.
 
 ## Repository Structure
 
 ```
-{{REPO_NAME}}/
+hamsci-raytracing/
 ├── CLAUDE.md                     ← this file; project instructions for Claude
-├── README.md                     ← working group description and setup checklist
-├── LICENSE                       ← add one; see the README checklist
+├── README.md                     ← working group description
+├── LICENSE.txt                   ← MIT
 ├── CITATION.cff                  ← make the repository citable
 ├── Gemfile                       ← Jekyll dependencies
 ├── .gitignore
@@ -59,14 +98,12 @@ an `@` import line for it above.
 │   └── rules/
 │       ├── ai-governance.md      ← required
 │       ├── hamsci-data.md        ← required
-│       ├── latex-writing.md      ← delete if no LaTeX
 │       └── python-code.md        ← delete if no Python
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   └── workflows/pages.yml       ← builds and deploys the website
 ├── ai/
-│   ├── ai_usage_log.md           ← mandatory AI session log
-│   └── GETTING_STARTED.md        ← delete once the project is running
+│   └── ai_usage_log.md           ← mandatory AI session log
 ├── docs/                         ← the public website (Jekyll source)
 │   ├── _config.yml
 │   ├── index.md, 1_about.md, …   ← pages appear in the nav in filename order

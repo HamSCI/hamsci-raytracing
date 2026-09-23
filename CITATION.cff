@@ -1,26 +1,26 @@
-# Replace this file's contents with your working group's citation metadata after instantiating
-# the template. Do not list AI tools as authors (see .claude/rules/ai-governance.md).
-# Delete this file if you do not want the repository to be citable.
+# Do not list AI tools as authors (see .claude/rules/ai-governance.md).
 cff-version: 1.2.0
 message: "If you use this project, please cite it as below."
 authors:
-- family-names: "YOUR_FAMILY_NAME"
-  given-names: "YOUR_GIVEN_NAME"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: "Hozumi"
+  given-names: "Kornyanat"
+  orcid: "https://orcid.org/0000-0002-4745-1023"
 # Kristina Collins authored the HamSCI working group website template this repository is built
-# from. Keep this entry only if that authorship applies to your project's citation.
+# from, which remains in place under docs/.
 - family-names: "Collins"
   given-names: "Kristina"
   orcid: "https://orcid.org/0000-0002-3816-1948"
-title: "{{PROJECT_NAME}}"
+title: "HamSCI Ray Tracing"
 version: 0.1.0
 doi: "[DOI to be assigned]"   # from Zenodo, after archiving a release; see the README checklist
-date-released: "{{YYYY-MM-DD}}"
-url: "https://github.com/HamSCI/{{REPO_NAME}}"
-# license: <SPDX identifier, e.g. CC-BY-4.0 or MIT; add once a LICENSE file is chosen>
+date-released: "2026-09-22"
+url: "https://github.com/HamSCI/hamsci-raytracing"
+license: MIT
 keywords:
   - HamSCI
   - amateur radio
   - space weather
   - ionosphere
   - citizen science
+  - HF ray-tracing
+  - HF propagation

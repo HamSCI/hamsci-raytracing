@@ -6,17 +6,20 @@ layout: home
 permalink: 
 ---
 
-Welcome to our documentation site for the HamSCI WWV/H Scientific Modulation Working Group! Browse the pages linked in the header for information about the project, how to build your own, and how to access data.
+Welcome to the documentation site for **HamSCI Ray Tracing**! This working group develops an
+open-source 3D HF ray-tracing toolkit, validates ionospheric models against HamSCI citizen
+science data, and studies space-weather-driven anomalous HF propagation. Browse the pages linked
+in the header to learn about the project, its goals, and how to get involved.
 
-If you have any questions or suggestions, please let us know by [**opening a new issue**](../issues/new). This leaves a public record that can help others. 
+This work is supported by NASA ROSES 2024 B.21 Heliophysics Citizen Science Investigations
+(H-CSI), award 80NSSC26K0051.
 
-<iframe width="1998" height="822" src="https://www.youtube.com/embed/UVIGS1XvQAY" title="WWV Ionospheric Scientific Modulation Test  | Signal Phantom" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+If you have any questions or suggestions, please let us know by
+[**opening a new issue**](https://github.com/HamSCI/hamsci-raytracing/issues/new),
+or join the [Google Group](https://groups.google.com/g/hamsci-ray-tracing?pli=1). Opening an
+issue leaves a public record that can help others.
 
 ---
 &nbsp; 
-
-
-
 
 <!--https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll-->
