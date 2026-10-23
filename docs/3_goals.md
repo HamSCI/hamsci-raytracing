@@ -40,7 +40,7 @@ Objectives 1–5 are pursued under the NASA award described in
    uplifts, and density gradients — to synthesize ionogram-like signatures, compared against
    directional ionograms, to help identify the minimal conditions that trigger ESF onset.
 
-## Work Plan
+## NASA Work Plan
 
 Adapted from the funded NASA proposal's work plan (subject to change as the project proceeds).
 Two things have changed since the proposal was written:
@@ -75,11 +75,16 @@ Two things have changed since the proposal was written:
 | November 2028 | Finalize examples and comprehensive documentation for the toolkit. |
 | **January 2029** | Complete project report and disseminate findings — official award end date. |
 
-## Related ONR-Funded Timeline
+## ONR Work Plan
 
 Objectives 6 and 7 above run under a separate three-year ONR award (see
 [About]({{ '/about/' | relative_url }})), whose period of performance is **December 1, 2025 –
-November 30, 2028**. The ONR proposal's own schedule assumed a start around September 2025
-(labeled FY26–FY28); that start was delayed, so those FY labels no longer line up with the
-actual dates. A detailed, ray-tracing-specific milestone breakdown for the revised dates isn't
-set yet — this page will be updated once one exists.
+November 30, 2028** — a 3-month delay from the proposal's nominal three-year span starting
+September 2025. The table below shows the ray-tracing-related portion of the ONR work plan,
+shifted by that same 3 months.
+
+| Activity | Year 1 (Dec 2025 – Nov 2026) | Year 2 (Dec 2026 – Nov 2027) | Year 3 (Dec 2027 – Nov 2028) |
+| --- | --- | --- | --- |
+| Develop validation pipeline (Objective 6) | Pipeline architecture design | Intermediate pipeline demonstration | Final pipeline integration & open-source release |
+| Large-scale Navy model validation (Objective 6) | — | — | Full-scale validation across models/frequencies |
+| Perform raytracing case studies (Objective 7) | Preliminary raytracing experiments | Systematic case studies, parameterized ionospheres | Finalize case studies |

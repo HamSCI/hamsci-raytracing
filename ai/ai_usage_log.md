@@ -130,3 +130,20 @@ command produces this format and appends it in the right order.
 - **Human Review Status**: Reviewed and verified by the PI (Kornyanat Hozumi); final wording
   shown to and approved by her before committing
 - **Git Hash**: 066ad82
+
+## [2026-10-23 12:26 MDT]
+- **Tool**: Claude (Anthropic), claude-sonnet-5
+- **Session Purpose**: Add a ray-tracing-only ONR work plan table to the Goals page, shifting the
+  ONR proposal's work plan by its confirmed 3-month delay (nominal Sep 2025 start → actual
+  December 1, 2025 – November 30, 2028 period of performance). Included only the three rows
+  mapping to Objectives 6-7 (validation pipeline, large-scale Navy model validation, raytracing
+  case studies); excluded VIPIR acquisition, diagnostic catalog, reports, and dissemination rows
+  as out of scope. Renamed the existing "Work Plan" heading to "NASA Work Plan" and the new
+  section to "ONR Work Plan" for parallel structure, per the PI. Also removed, per the PI, a
+  sentence that named the excluded (non-raytracing) items explicitly — she didn't want anything
+  unrelated to ray tracing mentioned on the page at all, even to describe what was left out.
+- **Sections/Files Affected**: docs/3_goals.md
+- **Nature of Contribution**: Edit, drafting of public-facing website copy
+- **Human Review Status**: Reviewed and verified by the PI (Kornyanat Hozumi); final wording
+  shown to and approved by her before committing
+- **Git Hash**: [fill in after committing]
