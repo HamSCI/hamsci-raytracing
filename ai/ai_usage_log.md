@@ -160,4 +160,4 @@ command produces this format and appends it in the right order.
 - **Nature of Contribution**: Edit, drafting of public-facing website copy
 - **Human Review Status**: Reviewed and verified by the PI (Kornyanat Hozumi); final wording
   shown to and approved by her before committing
-- **Git Hash**: [fill in after committing]
+- **Git Hash**: e228613
