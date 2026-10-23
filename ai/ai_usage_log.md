@@ -80,3 +80,20 @@ command produces this format and appends it in the right order.
 - **Human Review Status**: Reviewed and verified by the PI (Kornyanat Hozumi); final About-page
   wording shown to and approved by her before committing
 - **Git Hash**: 8dafe9e
+
+## [2026-10-23 11:39 MDT]
+- **Tool**: Claude (Anthropic), claude-sonnet-5
+- **Session Purpose**: Fix a broken deployment discovered right after pushing the ONR commit
+  above: the just-run "Deploy Jekyll with Plugins" workflow failed because `ubuntu-latest`
+  migrated to Ubuntu 26.04 (GitHub's scheduled Oct 19, 2026 migration, flagged as a warning in
+  this workflow's runs since September), and the pinned `ruby-version: '2.7'` has no prebuilt
+  release for that image. Pinned both jobs to `ubuntu-24.04` (the image this workflow ran on
+  successfully before) instead of the floating `ubuntu-latest` tag, to fix the immediate break
+  and avoid the same failure on the next scheduled image migration. Not a content change; this
+  was caught and fixed without separate PI review given its mechanical, low-risk nature, then
+  reported to her.
+- **Sections/Files Affected**: .github/workflows/pages.yml
+- **Nature of Contribution**: Bug fix (CI/CD configuration)
+- **Human Review Status**: Pending review (reported to PI; not separately re-confirmed before
+  commit, per the above)
+- **Git Hash**: [fill in after committing]
