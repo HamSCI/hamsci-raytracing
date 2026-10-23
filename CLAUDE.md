@@ -35,9 +35,28 @@ combines two HamSCI scaffolds:
 
 **HamSCI Working Group**: HamSCI Ray Tracing (https://hamsci.org/working-group/raytracing-wg)
 **Institution**: University of Scranton
-**Funder**: NASA ROSES 2024 B.21 Heliophysics Citizen Science Investigations (H-CSI),
-award/grant no. 80NSSC26K0051 ("Ionospheric Model Validation and Development of an Open-Source
-HF Ray-Tracing Toolkit Leveraging HamSCI Citizen Science Data")
+**Funder**: Two awards, both PI Kornyanat Hozumi / University of Scranton:
+- NASA ROSES 2024 B.21 Heliophysics Citizen Science Investigations (H-CSI), award/grant no.
+  80NSSC26K0051, "Ionospheric Model Validation and Development of an Open-Source HF Ray-Tracing
+  Toolkit Leveraging HamSCI Citizen Science Data" — this is the primary funder for the whole
+  project described in this file.
+- ONR (Office of Naval Research), award N000142612000, "Crowdsourced Observations for
+  Ionospheric Model Validation and a Diagnostic Approach for Forecasting Equatorial Spread F" —
+  a broader Navy-focused project (it also funds VIPIR ionosonde deployment and ESF
+  diagnostic/instrumentation work — the originally planned Ho Chi Minh City, Vietnam station has
+  since been canceled; do not name it anywhere, public or internal notes, without checking with
+  the PI for current status). **Only its ray-tracing-related portion belongs on this
+  public site**: (1) validating Navy models (e.g., NIMO) via the same raytracing-against-HamSCI
+  methodology as the NASA work, and (2) using 3D raytracing on parametric ionospheric scenes to
+  synthesize ionogram-like signatures for Equatorial Spread F (ESF) diagnostics. The ONR
+  proposal's written text names PHaRLAP/PyLap as the raytracing tool for this; that has since
+  changed (PI-confirmed, ONR program manager approved) to the same open-source native-Python
+  engine the PI is developing with NASA funding — do not describe the ONR work as using
+  PHaRLAP/PyLap, and do not describe the engine itself as "NASA-developed" (NASA funds the work;
+  the PI wrote the code). Do not add the ONR award's VIPIR/SEALION/AOSWA/instrumentation content
+  here — that is out of scope for the
+  ray-tracing working group's site. See `docs/1_about.md` for the exact wording agreed with the
+  PI (added 2026-10-23).
 **Project period**: February 2026 – January 2029 (official period of performance; the proposal's
 nominal period was September 2025 – August 2028, a 5-month shift). Active work practically began
 mid-May 2026 (PI's leave); the official end date, January 2029, has **not** been extended to

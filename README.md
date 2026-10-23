@@ -10,7 +10,12 @@ tutorials, technical discussions, software feedback sessions, and community rese
 This work is supported by **NASA ROSES 2024 B.21 Heliophysics Citizen Science Investigations
 (H-CSI)**, award **80NSSC26K0051**, *"Ionospheric Model Validation and Development of an
 Open-Source HF Ray-Tracing Toolkit Leveraging HamSCI Citizen Science Data"* (PI: Kornyanat
-Hozumi, University of Scranton).
+Hozumi, University of Scranton). Part of this work is also supported by the **Office of Naval
+Research (ONR)**, award **N000142612000**, *"Crowdsourced Observations for Ionospheric Model
+Validation and a Diagnostic Approach for Forecasting Equatorial Spread F"* (same PI and
+institution) — only the ray-tracing-related portion of that award is in scope for this working
+group; see the [About page](https://hamsci.github.io/hamsci-raytracing/about/) for what that
+covers.
 
 **Join us**: [Google Group](https://groups.google.com/g/hamsci-ray-tracing?pli=1) ·
 bi-weekly meetings, announced on the mailing list ·

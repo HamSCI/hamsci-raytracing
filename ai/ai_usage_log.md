@@ -63,3 +63,20 @@ command produces this format and appends it in the right order.
 - **Human Review Status**: Reviewed and verified by the PI (Kornyanat Hozumi) during the session,
   including a live local preview of every page
 - **Git Hash**: 926210f
+
+## [2026-10-23 11:37 MDT]
+- **Tool**: Claude (Anthropic), claude-sonnet-5
+- **Session Purpose**: Add a second funder (ONR, award N000142612000) to the public site and
+  CLAUDE.md, scoped per the PI's explicit instruction to only the ray-tracing-relevant parts of
+  that broader ONR proposal (Navy operational model validation; ESF diagnostic ray tracing),
+  excluding VIPIR instrumentation, SEALION/AOSWA collaboration, and other non-raytracing content.
+  Corrected two issues during drafting at the PI's direction: (1) wording that implied the
+  ray-tracing engine was "NASA/ONR-developed" rather than developed by the PI with NASA/ONR
+  funding, and (2) a now-canceled VIPIR station location (Ho Chi Minh City, Vietnam) that the PI
+  asked not to name anywhere, public or internal. Verified with a local Jekyll build that the
+  canceled station name does not appear anywhere in the built site.
+- **Sections/Files Affected**: CLAUDE.md, README.md, docs/index.md, docs/1_about.md
+- **Nature of Contribution**: Edit, drafting of public-facing website copy
+- **Human Review Status**: Reviewed and verified by the PI (Kornyanat Hozumi); final About-page
+  wording shown to and approved by her before committing
+- **Git Hash**: [fill in after committing]

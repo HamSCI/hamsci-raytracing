@@ -12,7 +12,8 @@ science data, and studies space-weather-driven anomalous HF propagation. Browse 
 in the header to learn about the project, its goals, and how to get involved.
 
 This work is supported by NASA ROSES 2024 B.21 Heliophysics Citizen Science Investigations
-(H-CSI), award 80NSSC26K0051.
+(H-CSI), award 80NSSC26K0051. Part of it is also supported by the Office of Naval Research
+(ONR), award N000142612000. See the [About](about/) page for details.
 
 If you have any questions or suggestions, please let us know by
 [**opening a new issue**](https://github.com/HamSCI/hamsci-raytracing/issues/new),
