@@ -80,8 +80,11 @@ Two things have changed since the proposal was written:
 Objectives 6 and 7 above run under a separate three-year ONR award (see
 [About]({{ '/about/' | relative_url }})), whose period of performance is **December 1, 2025 –
 November 30, 2028** — a 3-month delay from the proposal's nominal three-year span starting
-September 2025. The table below shows the ray-tracing-related portion of the ONR work plan,
-shifted by that same 3 months.
+September 2025. In practice, active work was further interrupted by the PI's leave from
+mid-February to mid-May 2026 — but the official end date, November 30, 2028, has not changed.
+The table below represents the plan of record (the ray-tracing-related portion of the ONR work
+plan, shifted by the original 3-month delay), not a schedule re-planned to compress around the
+leave.
 
 | Activity | Year 1 (Dec 2025 – Nov 2026) | Year 2 (Dec 2026 – Nov 2027) | Year 3 (Dec 2027 – Nov 2028) |
 | --- | --- | --- | --- |

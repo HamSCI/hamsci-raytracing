@@ -147,3 +147,17 @@ command produces this format and appends it in the right order.
 - **Human Review Status**: Reviewed and verified by the PI (Kornyanat Hozumi); final wording
   shown to and approved by her before committing
 - **Git Hash**: ce4f2ea
+
+## [2026-10-23 12:43 MDT]
+- **Tool**: Claude (Anthropic), claude-sonnet-5
+- **Session Purpose**: Note on the Goals page's ONR Work Plan that the PI's mid-February–mid-May
+  2026 leave (previously recorded for the NASA award) also interrupted the ONR award, which had
+  already started (Dec 2025) before the leave began — mirroring the NASA Work Plan's existing
+  "official vs. practical start, end date unchanged" framing. No table dates changed. Updated
+  memory with the same fact and with the settled ray-tracing-only/attribution-layout conventions
+  from the last several edits, so future sessions don't have to rediscover them.
+- **Sections/Files Affected**: docs/3_goals.md
+- **Nature of Contribution**: Edit, drafting of public-facing website copy
+- **Human Review Status**: Reviewed and verified by the PI (Kornyanat Hozumi); final wording
+  shown to and approved by her before committing
+- **Git Hash**: [fill in after committing]
