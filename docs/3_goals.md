@@ -29,6 +29,17 @@ mermaid: true
 5. **Fostering Public Engagement**: Host bi-weekly online seminars for citizen scientists to
    train users, help them set up their own research problems, and gather real-world feedback.
 
+Two further objectives are supported by a separate award (ONR; see
+[About]({{ '/about/' | relative_url }})) and use the same toolkit as the objectives above:
+
+6. **Navy Operational Model Validation** *(ONR-funded)*: Apply the same raytracing-against-HamSCI
+   methodology used for Objective 2 to validate Navy ionospheric models such as NIMO, using
+   HamSCI HF spot data archived in the Madrigal database.
+7. **Equatorial Spread F (ESF) Diagnostic Ray Tracing** *(ONR-funded)*: Use 3D raytracing through
+   parametric ionospheric scenes — background climatological models perturbed with tilts,
+   uplifts, and density gradients — to synthesize ionogram-like signatures, compared against
+   directional ionograms, to help identify the minimal conditions that trigger ESF onset.
+
 ## Work Plan
 
 Adapted from the funded NASA proposal's work plan (subject to change as the project proceeds).
@@ -63,3 +74,12 @@ Two things have changed since the proposal was written:
 | September 2028 | Create tutorial based on feedback from bi-weekly seminars. |
 | November 2028 | Finalize examples and comprehensive documentation for the toolkit. |
 | **January 2029** | Complete project report and disseminate findings — official award end date. |
+
+## Related ONR-Funded Timeline
+
+Objectives 6 and 7 above run under a separate three-year ONR award (see
+[About]({{ '/about/' | relative_url }})), whose period of performance is **December 1, 2025 –
+November 30, 2028**. The ONR proposal's own schedule assumed a start around September 2025
+(labeled FY26–FY28); that start was delayed, so those FY labels no longer line up with the
+actual dates. A detailed, ray-tracing-specific milestone breakdown for the revised dates isn't
+set yet — this page will be updated once one exists.

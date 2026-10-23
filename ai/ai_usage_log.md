@@ -97,3 +97,20 @@ command produces this format and appends it in the right order.
 - **Human Review Status**: Pending review (reported to PI; not separately re-confirmed before
   commit, per the above)
 - **Git Hash**: 9fd883e
+
+## [2026-10-23 11:53 MDT]
+- **Tool**: Claude (Anthropic), claude-sonnet-5
+- **Session Purpose**: Extend the ONR ray-tracing-only acknowledgment (added earlier this
+  session) to the Mission and Goals pages, at the PI's request, and record the ONR award's
+  corrected period of performance (December 1, 2025 – November 30, 2028, delayed from the
+  proposal's nominal ~September 2025 start). Kept the same scoping discipline as the About page:
+  only the two ray-tracing-relevant ONR objectives (Navy model validation; ESF diagnostic ray
+  tracing) were added, as new Mission bullets and new Goals objectives 6-7, with a short timeline
+  note rather than reproducing the ONR proposal's full POA&M table (most of its rows are
+  VIPIR/instrumentation/diagnostic-catalog items outside ray tracing, and no revised per-milestone
+  dates were provided to go with the corrected start). Updated CLAUDE.md's Funder field to match.
+- **Sections/Files Affected**: CLAUDE.md, docs/2_mission.md, docs/3_goals.md
+- **Nature of Contribution**: Edit, drafting of public-facing website copy
+- **Human Review Status**: Reviewed and verified by the PI (Kornyanat Hozumi); final wording
+  shown to and approved by her before committing
+- **Git Hash**: [fill in after committing]

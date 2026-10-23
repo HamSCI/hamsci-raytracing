@@ -15,10 +15,14 @@ space weather conditions.
 We pursue this by:
 - Implementing a fully open-source 3D HF ray-tracing engine natively in Python, based on the
   Jones & Stephenson ray-tracing formulation;
-- Validating ionospheric models (e.g., IRI, SAMI3, coupled SAMI3/WACCM-X) against HamSCI observational
-  data;
+- Validating ionospheric models — including citizen-science-relevant models (e.g., IRI, SAMI3,
+  coupled SAMI3/WACCM-X) and, through separate funding, operational models used by the U.S. Navy
+  — against HamSCI observational data;
 - Studying space weather effects on anomalous HF propagation, including Equatorial Plasma
-  Bubbles (EPBs) and off-great-circle (side-scatter) paths;
+  Bubbles (EPBs), off-great-circle (side-scatter) paths, and, through separate funding,
+  Equatorial Spread F (ESF) diagnostic signatures;
 - Lowering the barrier to participation through documentation, tutorials, and bi-weekly seminars
   that welcome citizen scientists into every stage of the work, from formulating research
   questions to writing code.
+
+See [About]({{ '/about/' | relative_url }}) for the funding that supports this mission.

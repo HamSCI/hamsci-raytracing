@@ -41,8 +41,12 @@ combines two HamSCI scaffolds:
   Toolkit Leveraging HamSCI Citizen Science Data" — this is the primary funder for the whole
   project described in this file.
 - ONR (Office of Naval Research), award N000142612000, "Crowdsourced Observations for
-  Ionospheric Model Validation and a Diagnostic Approach for Forecasting Equatorial Spread F" —
-  a broader Navy-focused project (it also funds VIPIR ionosonde deployment and ESF
+  Ionospheric Model Validation and a Diagnostic Approach for Forecasting Equatorial Spread F",
+  period of performance **December 1, 2025 – November 30, 2028** (the ONR proposal's own schedule
+  assumed a ~September 2025 start, labeled FY26–FY28; that start was delayed, so those FY labels
+  no longer line up with the actual dates — do not reuse the proposal's FY26/FY27/FY28 date
+  ranges without checking against this corrected period first) — a broader Navy-focused project
+  (it also funds VIPIR ionosonde deployment and ESF
   diagnostic/instrumentation work — the originally planned Ho Chi Minh City, Vietnam station has
   since been canceled; do not name it anywhere, public or internal notes, without checking with
   the PI for current status). **Only its ray-tracing-related portion belongs on this
@@ -55,8 +59,10 @@ combines two HamSCI scaffolds:
   PHaRLAP/PyLap, and do not describe the engine itself as "NASA-developed" (NASA funds the work;
   the PI wrote the code). Do not add the ONR award's VIPIR/SEALION/AOSWA/instrumentation content
   here — that is out of scope for the
-  ray-tracing working group's site. See `docs/1_about.md` for the exact wording agreed with the
-  PI (added 2026-10-23).
+  ray-tracing working group's site. This same ray-tracing-only scoping applies to
+  `docs/1_about.md`, `docs/2_mission.md`, and `docs/3_goals.md` (added 2026-10-23), all of which
+  now reference the ONR-funded work; check those for the exact wording agreed with the PI before
+  adding more.
 **Project period**: February 2026 – January 2029 (official period of performance; the proposal's
 nominal period was September 2025 – August 2028, a 5-month shift). Active work practically began
 mid-May 2026 (PI's leave); the official end date, January 2029, has **not** been extended to
