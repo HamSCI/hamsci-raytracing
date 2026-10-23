@@ -29,20 +29,11 @@ This work is supported by NASA ROSES 2024 B.21 Heliophysics Citizen Science Inve
 Ray-Tracing Toolkit Leveraging HamSCI Citizen Science Data"* (PI: Kornyanat Hozumi, University of
 Scranton).
 
-Part of this work is also supported by the Office of Naval Research (ONR), award
-N000142612000, *"Crowdsourced Observations for Ionospheric Model Validation and a Diagnostic
-Approach for Forecasting Equatorial Spread F"* (PI: Kornyanat Hozumi, University of Scranton).
-Two parts of that ONR-funded project extend this working group's toolkit directly, and are the
-only parts described here. Both use the same open-source, native-Python ray-tracing engine the
-PI is developing with NASA funding (described above):
-
-- **Navy operational model validation**: applying the same raytracing-against-HamSCI methodology
-  used for the NASA-funded work above to validate Navy ionospheric models such as NIMO, using
-  HamSCI HF spot data (RBN, PSKReporter, WSPRNet) archived in the Madrigal database.
-- **Equatorial Spread F (ESF) diagnostic ray tracing**: using 3D raytracing through parametric
-  ionospheric scenes — background climatological models perturbed with tilts, uplifts, and
-  density gradients — to synthesize ionogram-like signatures, compared against directional
-  ionograms, to help identify the minimal conditions that trigger ESF onset.
+Part of this work is also supported by the Office of Naval Research (ONR), award N000142612000,
+*"Crowdsourced Observations for Ionospheric Model Validation and a Diagnostic Approach for
+Forecasting Equatorial Spread F"* (PI: Kornyanat Hozumi, University of Scranton). Only the
+ray-tracing-related portion of that broader project is part of this working group; see
+[Goals]({{ '/goals/' | relative_url }}) for the specific objectives it supports.
 
 For updates and to join bi-weekly meetings, join the Google Group
 [here](https://groups.google.com/g/hamsci-ray-tracing?pli=1). Meeting announcements are sent out

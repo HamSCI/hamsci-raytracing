@@ -14,6 +14,9 @@ mermaid: true
 
 ## Research Objectives
 
+Objectives 1–5 are pursued under the NASA award described in
+[About]({{ '/about/' | relative_url }}); objectives 6–7 under the ONR award.
+
 1. **Developing a 3D HF Ray-Tracing Toolkit**: Implement a 3D HF ray-tracing engine natively in
    Python, based on the Jones & Stephenson ray-tracing formulation, enabling accurate modeling of
    HF propagation through complex ionospheric conditions and understudied off-great-circle paths
@@ -29,13 +32,10 @@ mermaid: true
 5. **Fostering Public Engagement**: Host bi-weekly online seminars for citizen scientists to
    train users, help them set up their own research problems, and gather real-world feedback.
 
-Two further objectives are supported by a separate award (ONR; see
-[About]({{ '/about/' | relative_url }})) and use the same toolkit as the objectives above:
-
-6. **Navy Operational Model Validation** *(ONR-funded)*: Apply the same raytracing-against-HamSCI
+6. **Navy Operational Model Validation**: Apply the same raytracing-against-HamSCI
    methodology used for Objective 2 to validate Navy ionospheric models such as NIMO, using
    HamSCI HF spot data archived in the Madrigal database.
-7. **Equatorial Spread F (ESF) Diagnostic Ray Tracing** *(ONR-funded)*: Use 3D raytracing through
+7. **Equatorial Spread F (ESF) Diagnostic Ray Tracing**: Use 3D raytracing through
    parametric ionospheric scenes — background climatological models perturbed with tilts,
    uplifts, and density gradients — to synthesize ionogram-like signatures, compared against
    directional ionograms, to help identify the minimal conditions that trigger ESF onset.

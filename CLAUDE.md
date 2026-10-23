@@ -60,9 +60,18 @@ combines two HamSCI scaffolds:
   the PI wrote the code). Do not add the ONR award's VIPIR/SEALION/AOSWA/instrumentation content
   here — that is out of scope for the
   ray-tracing working group's site. This same ray-tracing-only scoping applies to
-  `docs/1_about.md`, `docs/2_mission.md`, and `docs/3_goals.md` (added 2026-10-23), all of which
-  now reference the ONR-funded work; check those for the exact wording agreed with the PI before
-  adding more.
+  `docs/1_about.md`, `docs/2_mission.md`, and `docs/3_goals.md`. Settled layout (2026-10-23,
+  after the PI flagged an earlier draft as redundant/asymmetric — do not revert to per-bullet
+  "(ONR-funded)"/"through separate funding" tags, and do not re-duplicate the two ONR objectives'
+  full descriptions onto the About page):
+  - `docs/1_about.md`: brief, symmetric acknowledgment of both funders only (one short paragraph
+    each, same level of detail) — no objective-level bullets; points to Goals for specifics.
+  - `docs/3_goals.md`: the one place with objective-level detail. One line states the funder
+    split ("Objectives 1–5 ... NASA ...; objectives 6–7 ... ONR") before the combined numbered
+    list; individual objectives are not re-tagged by funder.
+  - `docs/2_mission.md`: describes the mission/scope with no inline funder mentions at all
+    (NASA's parts aren't tagged either, so tagging only ONR's was asymmetric); points to About
+    for funding.
 **Project period**: February 2026 – January 2029 (official period of performance; the proposal's
 nominal period was September 2025 – August 2028, a 5-month shift). Active work practically began
 mid-May 2026 (PI's leave); the official end date, January 2029, has **not** been extended to

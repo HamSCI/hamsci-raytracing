@@ -114,3 +114,19 @@ command produces this format and appends it in the right order.
 - **Human Review Status**: Reviewed and verified by the PI (Kornyanat Hozumi); final wording
   shown to and approved by her before committing
 - **Git Hash**: 251b4dc
+
+## [2026-10-23 12:07 MDT]
+- **Tool**: Claude (Anthropic), claude-sonnet-5
+- **Session Purpose**: Restructure the ONR funding attribution after the PI flagged the prior
+  version as asymmetric (ONR objectives tagged "through separate funding"/"(ONR-funded)" inline,
+  while NASA's weren't) and redundant (the two ONR objective descriptions were duplicated on both
+  About and Goals). Settled on one place per kind of information: About states both funders
+  briefly and symmetrically with no objective-level detail; Goals carries the objective detail
+  with a single funder-split line before one combined numbered list (no more per-item tags);
+  Mission describes scope with no inline funder mentions at all. Updated CLAUDE.md to document
+  this settled layout so it isn't redrafted back into the asymmetric form later.
+- **Sections/Files Affected**: CLAUDE.md, docs/1_about.md, docs/2_mission.md, docs/3_goals.md
+- **Nature of Contribution**: Edit, drafting of public-facing website copy
+- **Human Review Status**: Reviewed and verified by the PI (Kornyanat Hozumi); final wording
+  shown to and approved by her before committing
+- **Git Hash**: [fill in after committing]
